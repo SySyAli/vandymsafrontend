@@ -11,7 +11,7 @@ async function fetchHalalFood() {
 async function halalDiningFood() {
     const foods = await fetchHalalFood()
     return (
-        <>
+        <div>
         <div className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">Halal Food in Dining Halls</div>
         <div className="flex flex-wrap flex-col items-stretch justify-center lg:flex-row lg:flew-wrap gap-100 ">
         {foods.allFood[0].everything.map((location: any, i: any) =>{
@@ -22,7 +22,7 @@ async function halalDiningFood() {
             )
         })}
         </div>
-        </>  
+        </div>  
     )
 }
 
@@ -63,7 +63,7 @@ function HalalFormat({ timeFood, mealName }: any) {
     //console.log(timeFood.food)
     return (
         <div>
-            <h1 className='text-center font-bold text-xl'>{mealName}</h1>
+            <h1 className='text-center font-bold text-xl underline'>{mealName}</h1>
             {(timeFood.message.indexOf("NO") !== -1) ? <p className="text-base">{mealName} has no Halal Meat related items (REPHRASE)</p> : <PutItems items={timeFood.food[0]}/>}
         </div>
     )
@@ -77,8 +77,8 @@ function PutItems({ items }: any) {
                 //console.log(item)
                 return (
                     <div key={i}>
-                        {Object.keys(item).length === 1 ? <h6 className='text-center font-bold text-lg'>{item["Select Items"]}</h6>:<></>}
-                        {"Item Name" in item ? <p className='text-center text-base font-bold'>{item["Item Name"]}</p>:<></>}
+                        {Object.keys(item).length === 1 ? <h6 className='text-center font-bold text-lg italic'>{item["Select Items"]}</h6>:<></>}
+                        {"Item Name" in item ? <p className='text-center text-base '>{item["Item Name"]}</p>:<></>}
                     </div>
                 )
             })}

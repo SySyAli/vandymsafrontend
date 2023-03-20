@@ -13,7 +13,18 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'scontent-atl3-2.cdninstagram.com',
       },
-      
+      {
+        protocol: 'https',
+        hostname: 'upload.wikimedia.org',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn-icons-png.flaticon.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+      }
     ],
   }
 }

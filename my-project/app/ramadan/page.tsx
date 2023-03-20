@@ -1,10 +1,14 @@
+/* eslint-disable react/no-unescaped-entities */
+import Image from "next/image";
 import React from "react";
 
 function Ramadan() {
 	return (
 		<div className="flex flex-col gap-4 text-center items-center justify-center w-full">
 			<div>
-				<h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900  dark:text-white text-center">Ramadan 2023</h1>
+				<h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900  dark:text-white text-center">
+					Ramadan 2023
+				</h1>
 			</div>
 			<div
 				className="hero"
@@ -23,6 +27,7 @@ function Ramadan() {
 							<a
 								className="link"
 								target="_blank"
+								rel="noreferrer"
 								href="https://docs.google.com/document/d/1KKgaWbvMlRsK2vBquD-fVqp_AeNGxBy5SMlG1dwmo-4/edit?usp=sharing"
 							>
 								EBI Weekly Iftar Menu
@@ -33,6 +38,7 @@ function Ramadan() {
 							<a
 								className="link"
 								target="_blank"
+								rel="noreferrer"
 								href="https://campusdining.vanderbilt.edu/dining-options-during-ramadan/"
 							>
 								Dining Options during Ramadan
@@ -130,6 +136,8 @@ function Ramadan() {
 				<div className="hero-content flex flex-col gap-4 w-full align-center items-center justify-center text-center text-neutral-content">
 					<img
 						src="https://scontent.cdninstagram.com/v/t51.29350-15/336109572_203479505702537_4845990526967264008_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=nbKLialu-GwAX8IpzDc&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDGN37UxQ56_OmimpCLqZOmGo5lg4vow0wgr8MD_-xTXQ&oe=641AB48F"
+						alt = "Spirital Event Calendar"
+						loading="lazy"
 						className="w-fit lg:max-w-sm rounded-lg shadow-2xl"
 					/>
 					<div className="max-w-md">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 ///../../public/msaLogo.jpeg
 
 export default function Navbar() {
@@ -69,7 +70,7 @@ export default function Navbar() {
 								<Link href="/ramadan">Ramadan 2023</Link>
 							</li>
 							<li>
-								<Link href="/calendarEvents"> Future Events </Link>
+								<Link href="/photos"> Photos </Link>
 							</li>
 							<li>
 								<Link href="/recentEvents"> Recent Events </Link>
@@ -132,7 +133,7 @@ export default function Navbar() {
 					<div className="avatar">
 						<div className="w-24 rounded">
 							<Link href="/">
-								<img src="/MSA.png" />
+								<Image src="/MSA.png" fill={true} loading="lazy" alt="MSA Logo"/>
 							</Link>
 						</div>
 					</div>
@@ -180,7 +181,7 @@ export default function Navbar() {
 								<Link href="/ramadan">Ramadan 2023</Link>
 							</li>
 						<li>
-							<Link href="/calendarEvents"> Future Events </Link>
+							<Link href="/photos"> Photos </Link>
 						</li>
 						<li>
 							<Link href="/recentEvents"> Recent Events </Link>

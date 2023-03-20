@@ -34,7 +34,7 @@ export default class NextJsCarousel extends Component<MyProps> {
 								className="w-full md:h-[800px] lg:h-[1000px] object-cover overflow-hidden object-center lg:rounded-lg"
 								key={"slide" + (i + 1)}
 							>
-								<img className="" src={link} alt={"image" + i + 1} />
+								<img loading="lazy" className="" src={link} alt={"image" + i + 1} />
 							</div>
 						);
 					})}

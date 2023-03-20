@@ -2,6 +2,7 @@ import "./globals.css";
 import NewCarousel from "./components/newCarousel";
 import hdate from "human-date";
 import MyGallery from "./components/newnewCarousel";
+import Image from "next/image";
 // 'tw-elements'
 
 async function getPrayerTimes() {
@@ -16,21 +17,28 @@ async function getPhotoUrls() {
 	const data = await res.json();
 	return data;
 }
-async function getEvents() {
-	const url = await "http://localhost:4000/getMSAEvents";
+async function getInstagramPosts() {
+	const url = await "http://localhost:4000/getInstagramPosts";
 	const res = await fetch(url, { cache: "no-store" });
 	const data = await res.json();
 	return data;
 }
 
+/* async function getEvents() {
+	const url = await "http://localhost:4000/getMSAEvents";
+	const res = await fetch(url, { cache: "no-store" });
+	const data = await res.json();
+	return data;
+}
+ */
 // FIGURE OUT WHAT TO DO WITH CAROUSEL - AUTOMATIC OR BUTTONS/MANUAL
 // FIGURE OUT TIME CONVERSION
 export default async function Home() {
 	const times: any = await getPrayerTimes();
+	const InstagramPosts: any = await getInstagramPosts();
 	let photoUrls: any = await getPhotoUrls();
-	const calendarEvents: any = await getEvents();
-
-	const threeEvents: any = calendarEvents.events.slice(0, 1);
+	//const calendarEvents: any = await getEvents();
+	//const threeEvents: any = calendarEvents.events.slice(0, 1);
 	photoUrls = photoUrls.results.slice(0, 10);
 
 	/*
@@ -85,17 +93,16 @@ export default async function Home() {
 					<div className="flex flex-col gap-6 w-full items-center justify-center lg:h-fit lg:w-[50%] px-2 lg:rounded-lg">
 						<PrayerTable iTimes={times} />
 					</div>
-					<div className="flex flex-col lg:w-[50%] lg:h-full px-2 gap-6 w-full items-center justify-center pb-6">
+					<div className="flex flex-col lg:w-[50%] lg:h-full px-2 gap-6 w-full h-fit items-center justify-center pb-6">
 						<h1 className="font-bold text-3xl text-right">
-							The Next MSA Event!{" "}
+							The Latest VandyMSA Post rashid same height!{" "}
 						</h1>
-						{threeEvents.map((event: any, i: any) => {
-							return (
-								<div key={i}>
-									<Event className="h-full" event={event} />
-								</div>
-							);
-						})}
+						<div className="object-contain w-full h-fit">
+							<iframe
+								src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FChicago&src=Y19vdTZpZ2gyY2Y2dDgzaDA3MGkxdTBsOGQ2Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23AD1457"
+								className="w-full h-[50vw] lg:h-[20vw]"
+							></iframe>
+						</div>
 					</div>
 				</div>
 
@@ -107,6 +114,17 @@ export default async function Home() {
 	);
 }
 //
+
+/*
+{threeEvents.map((event: any, i: any) => {
+							return (
+								<div key={i}>
+									<Event className="h-full" event={event} />
+								</div>
+							);
+						})}
+
+*/
 
 // FIGURE OUT TIMEZONES
 // current Prayer

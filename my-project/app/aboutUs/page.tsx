@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 export default async function aboutUs() {
 	return (
 		<div className="flex flex-col gap-4 text-center items-center justify-center">
@@ -81,6 +82,7 @@ export default async function aboutUs() {
 					<a
 						className="link"
 						target="_blank"
+						rel='noreferrer' 
 						href={
 							"https://www.google.com/maps/d/u/0/edit?mid=1l7ACbCOblyE5p45Lzk7JpYQZSujq6O0&usp=sharing"
 						}
