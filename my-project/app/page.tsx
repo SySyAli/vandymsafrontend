@@ -1,7 +1,6 @@
 import "./globals.css";
 import NewCarousel from "./components/newCarousel";
 import hdate from "human-date";
-import MyGallery from "./components/newnewCarousel";
 import Image from "next/image";
 // 'tw-elements'
 const URI = "https://vandymsabackend.fly.dev";
@@ -89,9 +88,6 @@ export default async function Home() {
 						<PrayerTable iTimes={times} />
 					</div>
 					<div className="flex flex-col lg:w-[50%] lg:h-full px-2 gap-6 w-full h-fit items-center justify-center pb-6">
-						<h1 className="font-bold text-3xl text-right">
-							The Latest VandyMSA Post{" "}
-						</h1>
 						<div className="object-contain w-full h-fit">
 							<iframe
 								src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FChicago&src=Y19vdTZpZ2gyY2Y2dDgzaDA3MGkxdTBsOGQ2Y0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23AD1457"
