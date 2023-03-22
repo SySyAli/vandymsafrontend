@@ -11,13 +11,13 @@ export default function aboutUs() {
 				<div className="hero-overlay bg-opacity-60"></div>
 				<div className="hero-content text-center font-bold text-3xl text-neutral-content">
 					<div className="max-w-md">
-						<p className="mb-5">
+						<div className="mb-5">
 							Welcome to the Vanderbilt Muslim Student Association (Vandy MSA)
 							website! Our organization is dedicated to serving the Muslim
 							student community at Vanderbilt University and promoting
 							understanding, respect, and friendship between people of all
 							religions and cultures.
-						</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -30,8 +30,8 @@ export default function aboutUs() {
 				<div className="hero-overlay bg-opacity-60"></div>
 				<div className="hero-content text-center text-neutral-content">
 					<div className="max-w-md">
-						<h1 className="mb-5 text-xl font-bold">MSA History</h1>
-						<p className="mb-5">
+						<div className="mb-5 text-xl font-bold">MSA History</div>
+						<div className="mb-5">
 							The Vanderbilt MSA was established in the early 2000s as a
 							student-led initiative to create a welcoming and supportive space
 							for Muslim students at Vanderbilt. Over the years, the Vanderbilt
@@ -40,7 +40,7 @@ export default function aboutUs() {
 							events, and services to its members. Our mission is to promote a
 							positive and inclusive environment for Muslims on campus and to
 							build bridges of understanding and respect with other communities.
-						</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -53,13 +53,13 @@ export default function aboutUs() {
 				<div className="hero-overlay bg-opacity-60"></div>
 				<div className="hero-content text-center text-neutral-content">
 					<div className="max-w-md">
-						<h1 className="mb-5 text-xl font-bold">MSA Board</h1>
-						<p className="mb-5">
+						<div className="mb-5 text-xl font-bold">MSA Board</div>
+						<div className="mb-5">
 							The Vanderbilt MSA is governed by a board of student leaders. The
 							board is responsible for overseeing the organization's programs,
 							events, and finances, as well as representing the interests of the
 							Muslim student community on campus. More to come!
-						</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -72,8 +72,8 @@ export default function aboutUs() {
 				<div className="hero-overlay bg-opacity-60"></div>
 				<div className="hero-content text-center text-neutral-content">
 					<div className="max-w-md">
-						<h1 className="mb-5 text-xl font-bold">Adjacent Orgs</h1>
-						<p className="mb-5">
+						<div className="mb-5 text-xl font-bold">Adjacent Orgs</div>
+						<div className="mb-5">
 							The Vanderbilt MSA is proud to be part of a vibrant and supportive
 							community of organizations that share our mission to promote
 							diversity, inclusivity, and cultural exchange on campus. Some
@@ -83,7 +83,7 @@ export default function aboutUs() {
 							Student Association, Vanderbilt Interfaith Council, Asian American
 							Student Association, South Asian Cultural Exchange, Multicultural
 							Leadership Council, and Dores in Solidarity with Palestine.
-						</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -96,8 +96,8 @@ export default function aboutUs() {
 				<div className="hero-overlay bg-opacity-60"></div>
 				<div className="hero-content text-center text-neutral-content">
 					<div className="max-w-md">
-						<h1 className="mb-5 text-xl font-bold">Nashville Community</h1>
-						<p className="mb-5">
+						<div className="mb-5 text-xl font-bold">Nashville Community</div>
+						<div className="mb-5">
 							Vanderbilt is located in the heart of Nashville, one of the most
 							vibrant and diverse cities in the country. The Nashville Muslim
 							community is an active and growing part of the city's cultural
@@ -112,7 +112,7 @@ export default function aboutUs() {
 							Center of Nashville at Bellevue, Imam Mahdi Islamic Centre, Al
 							Zahra Center of Nashville, Islamic Center of Williamson County,
 							and much more.
-						</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -123,16 +123,16 @@ export default function aboutUs() {
 				}}
 			>
 				<div className="hero-overlay bg-opacity-60"></div>
-				<div className="hero-content text-center text-neutral-content">
-				<img
-						src="/prayerspaces.png"
-						alt="Prayer Spaces Map"
-						loading="lazy"
-						className="w-fit lg:max-w-sm rounded-lg shadow-2xl"
-					/>
+				<div className="hero-content flex flex-col gap-4 w-full align-center items-center justify-center text-center text-neutral-content">
 					<div className="max-w-md">
-						<h1 className="mb-5 text-xl font-bold">Prayer Spaces on Campus</h1>
-						<p className="mb-5">
+						<img
+							src="/prayerspaces.png"
+							alt="Prayer Spaces Map"
+							loading="lazy"
+							className="w-fit lg:max-w-sm rounded-lg shadow-2xl"
+						/>
+						<div className="mb-5 text-xl font-bold">Prayer Spaces on Campus</div>
+						<div className="mb-5">
 							The Vanderbilt has several prayer spaces on campus. The main one
 							being the Annex, located on 411 24th Ave S, Nashville, TN 37212.
 							There is also the Commons Contemplation Room, which is located on
@@ -154,7 +154,7 @@ export default function aboutUs() {
 								Vanderbilt Praying Spaces Map
 							</a>
 							.
-						</p>
+						</div>
 					</div>
 				</div>
 			</div>
