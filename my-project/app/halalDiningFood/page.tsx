@@ -32,12 +32,12 @@ function DiningHallFood({ information }: any) {
             <div className="card card-bordered bg-base-200 shadow-xl">
                 <div className="card-body h-full w-fit">
                     {information.diningHall !== undefined ? (
-                        <h2 className="card-title text-center underline">{information.diningHall}</h2>
+                        <div className="card-title text-center underline">{information.diningHall}</div>
                     ) : (
-                        <h2 className="card-title text-center">(No Name)</h2>
+                        <div className="card-title text-center">(No Name)</div>
                     )}  
 
-                    {information.message === "CLOSED" ? <p className=''>This Dining Hall is closed</p> : <FoodDaysFormat foodInformation={information.foodInformation}/>}
+                    {information.message === "CLOSED" ? <div className=''>This Dining Hall is closed</div> : <FoodDaysFormat foodInformation={information.foodInformation}/>}
 
                 </div>
             </div>
@@ -63,8 +63,8 @@ function HalalFormat({ timeFood, mealName }: any) {
     //console.log(timeFood.food)
     return (
         <div>
-            <h1 className='text-center font-bold text-xl underline'>{mealName}</h1>
-            {(timeFood.message.indexOf("NO") !== -1) ? <p className="text-base text-center">{mealName} has no Halal Meat related items.</p> : <PutItems items={timeFood.food[0]}/>}
+            <div className='text-center font-bold text-xl underline'>{mealName}</div>
+            {(timeFood.message.indexOf("NO") !== -1) ? <div className="text-base text-center">{mealName} has no Halal Meat related items.</div> : <PutItems items={timeFood.food[0]}/>}
         </div>
     )
 }
@@ -77,8 +77,8 @@ function PutItems({ items }: any) {
                 //console.log(item)
                 return (
                     <div key={i}>
-                        {Object.keys(item).length === 1 ? <h6 className='text-center font-bold text-lg italic'>{item["Select Items"]}</h6>:<></>}
-                        {"Item Name" in item ? <p className='text-center text-base '>{item["Item Name"]}</p>:<></>}
+                        {Object.keys(item).length === 1 ? <div className='text-center font-bold text-lg italic'>{item["Select Items"]}</div>:<></>}
+                        {"Item Name" in item ? <div className='text-center text-base '>{item["Item Name"]}</div>:<></>}
                     </div>
                 )
             })}

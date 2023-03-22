@@ -6,9 +6,9 @@ function Ramadan() {
 	return (
 		<div className="flex flex-col gap-4 text-center items-center justify-center w-full">
 			<div>
-				<h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900  dark:text-white text-center">
+				<div className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900  dark:text-white text-center">
 					Ramadan 2023
-				</h1>
+				</div>
 			</div>
 			<div
 				className="hero"
@@ -19,8 +19,8 @@ function Ramadan() {
 				<div className="hero-overlay bg-opacity-60"></div>
 				<div className="hero-content text-center text-neutral-content">
 					<div className="max-w-md">
-						<h1 className="mb-5 text-5xl font-bold">EBI Daily Iftars</h1>
-						<p className="mb-5">
+						<div className="mb-5 text-5xl font-bold">EBI Daily Iftars</div>
+						<div className="mb-5">
 							E. Bronson Ingram (EBI) dining hall will be open from 7pm-9pm
 							every night for Iftar, starting March 22nd, featuring a cultural
 							food rotation every week. A full menu can be found here:
@@ -44,7 +44,7 @@ function Ramadan() {
 								Dining Options during Ramadan
 							</a>
 							.
-						</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -57,8 +57,8 @@ function Ramadan() {
 				<div className="hero-overlay bg-opacity-60"></div>
 				<div className="hero-content text-center text-neutral-content">
 					<div className="max-w-md">
-						<h1 className="mb-5 text-5xl font-bold">Suhoor Boxes</h1>
-						<p className="mb-5">
+						<div className="mb-5 text-5xl font-bold">Suhoor Boxes</div>
+						<div className="mb-5">
 							Items designated for Suhoor will be aviailable at all Munchie
 							Marts from March 20th to April 20th across campus, held in
 							designated coolers. No reservations are needed, Suhoor items will
@@ -71,7 +71,7 @@ function Ramadan() {
 								<li>Tahini-Maple Sweet Potato Pancakes</li>
 								<li>Chickpea & Veggie Bowl</li>
 							</ul>
-						</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -84,12 +84,12 @@ function Ramadan() {
 				<div className="hero-overlay bg-opacity-60"></div>
 				<div className="hero-content flex flex-col gap-4 w-full align-center items-center justify-center text-center text-neutral-content">
 					<div className="max-w-md">
-						<h1 className="mb-5 text-5xl font-bold">Campus Iftars</h1>
-						<p className="mb-5">
+						<div className="mb-5 text-5xl font-bold">Campus Iftars</div>
+						<div className="mb-5">
 							The MSA and other orgs will be occasionally hosting catered iftars
 							in addition to the EBI Iftars. These may be sit-down iftars or
 							aviailable for pickup at the Annex.
-						</p>
+						</div>
 						<ul>
 							<li>
 								MSA Community Iftar is on 3/27/23 and in Alumni Hall (Memorial
@@ -142,11 +142,11 @@ function Ramadan() {
 						className="w-fit lg:max-w-sm rounded-lg shadow-2xl"
 					/>
 					<div className="max-w-md">
-						<h1 className="mb-5 text-5xl font-bold">Spiritual Events</h1>
-						<p className="mb-5">
+						<div className="mb-5 text-5xl font-bold">Spiritual Events</div>
+						<div className="mb-5">
 							The MSA will be hosting a variety of spirtual events throughout
 							Ramadan:
-						</p>
+						</div>
 						<ul>
 							<li>
 								Every Friday at 6:30PM, there will be a Halaqa at ICN with other

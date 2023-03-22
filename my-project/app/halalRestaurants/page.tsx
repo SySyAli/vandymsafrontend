@@ -5,14 +5,14 @@ export default async function HalalRestaurants() {
 	return (
 		<div className="flex flex-col gap-4 text-center">
 			<div>
-				<h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
+				<div className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl">
 					Halal Restaurants
-				</h1>
+				</div>
 			</div>
 			<div>
-				<h3 className="font-bold">
+				<div className="font-bold">
 					Here is a list of Halal Restaurants located near campus:
-				</h3>
+				</div>
 			</div>
 			<div>
 				<ul>

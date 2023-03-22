@@ -11,9 +11,9 @@ export default async function InstagramPage() {
 
   return (
     <div>
-      <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900  dark:text-white text-center">
+      <div className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900  dark:text-white text-center">
         Instagram Posts
-      </h1>
+      </div>
       <div className="flex flex-wrap  items-center justify-center flex-row flew-wrap gap-100">
         {posts.instagramPosts.map((post: any) => {
           return (
@@ -52,7 +52,7 @@ function InstagramPost({ instaPost }: any) {
         )}
         <div className="card-body">
           <a className="link" target="_blank" rel='noreferrer' href={instaPost.permalink}>
-            <p>{instaPost.caption.substring(0, 100) + "..."}</p>
+            <div>{instaPost.caption.substring(0, 100) + "..."}</div>
           </a>
         </div>
       </div>

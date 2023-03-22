@@ -5,7 +5,7 @@ export default async function forms() {
 				Forms
 			</div>
 			<div>
-				<p>Here are some important forms that we use below:</p>
+				<div>Here are some important forms that we use below:</div>
 				<ul>
 					<li>
 						The{" "}
