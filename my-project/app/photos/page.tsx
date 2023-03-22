@@ -11,7 +11,7 @@ export default async function PhotosPage() {
 	const photos = await fetchPhotos();
 	return (
 		<div>
-			<div className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">
+			<div className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl text-center">
 				Photos
 			</div>
 			<div className="flex flex-wrap flex-col items-stretch text-center justify-center lg:flex-row lg:flew-wrap gap-100 ">

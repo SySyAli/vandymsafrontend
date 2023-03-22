@@ -11,7 +11,7 @@ export default async function InstagramPage() {
 
   return (
     <div>
-      <div className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900  dark:text-white text-center">
+      <div className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900  text-center">
         Instagram Posts
       </div>
       <div className="flex flex-wrap  items-center justify-center flex-row flew-wrap gap-100">
