@@ -4,21 +4,17 @@ import hdate from "human-date";
 import MyGallery from "./components/newnewCarousel";
 import Image from "next/image";
 // 'tw-elements'
+const URI = "https://vandymsabackend.fly.dev";
+
 
 async function getPrayerTimes() {
-	const url = await `http://localhost:4000/prayerTimes`;
+	const url = await `${URI}/prayerTimes`;
 	const res = await fetch(url, { cache: "no-store" });
 	const data = await res.json();
 	return data;
 }
 async function getPhotoUrls() {
-	const url = await "http://localhost:4000/getPhotoLinks";
-	const res = await fetch(url, { cache: "no-store" });
-	const data = await res.json();
-	return data;
-}
-async function getInstagramPosts() {
-	const url = await "http://localhost:4000/getInstagramPosts";
+	const url = await `${URI}/getPhotoLinks`;
 	const res = await fetch(url, { cache: "no-store" });
 	const data = await res.json();
 	return data;
@@ -35,7 +31,6 @@ async function getInstagramPosts() {
 // FIGURE OUT TIME CONVERSION
 export default async function Home() {
 	const times: any = await getPrayerTimes();
-	const InstagramPosts: any = await getInstagramPosts();
 	let photoUrls: any = await getPhotoUrls();
 	//const calendarEvents: any = await getEvents();
 	//const threeEvents: any = calendarEvents.events.slice(0, 1);
@@ -82,7 +77,7 @@ export default async function Home() {
 					<div className="hero-overlay bg-opacity-60"></div>
 					<div className="hero-content text-center text-neutral-content">
 						<div className="max-w-md">
-							<h1 className="mb-5 text-5xl font-bold">
+							<h1 className="mb-5 text-5xl text-white font-bold">
 								Welcome to the Vanderbilt MSA!
 							</h1>
 						</div>
@@ -95,7 +90,7 @@ export default async function Home() {
 					</div>
 					<div className="flex flex-col lg:w-[50%] lg:h-full px-2 gap-6 w-full h-fit items-center justify-center pb-6">
 						<h1 className="font-bold text-3xl text-right">
-							The Latest VandyMSA Post rashid same height!{" "}
+							The Latest VandyMSA Post{" "}
 						</h1>
 						<div className="object-contain w-full h-fit">
 							<iframe

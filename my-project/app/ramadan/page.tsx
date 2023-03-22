@@ -62,8 +62,9 @@ function Ramadan() {
 							Items designated for Suhoor will be aviailable at all Munchie
 							Marts from March 20th to April 20th across campus, held in
 							designated coolers. No reservations are needed, Suhoor items will
-							be aviailable for a meal swipe at any time of the day. Some Suhoor
-							Items would include:
+							be aviailable for a meal swipe at any time of the day. The MSA
+							will also be holding a suhoor at All Faith Chapel on Saturday,
+							March 25th from 4:30am to 6:30am. Some Suhoor Items would include:
 							<ul>
 								<li>Tomato, Spinach and Egg Scrambler</li>
 								<li>Blueberry Overnight Oats</li>
@@ -136,7 +137,7 @@ function Ramadan() {
 				<div className="hero-content flex flex-col gap-4 w-full align-center items-center justify-center text-center text-neutral-content">
 					<img
 						src="https://scontent.cdninstagram.com/v/t51.29350-15/336109572_203479505702537_4845990526967264008_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=nbKLialu-GwAX8IpzDc&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDGN37UxQ56_OmimpCLqZOmGo5lg4vow0wgr8MD_-xTXQ&oe=641AB48F"
-						alt = "Spirital Event Calendar"
+						alt="Spirital Event Calendar"
 						loading="lazy"
 						className="w-fit lg:max-w-sm rounded-lg shadow-2xl"
 					/>

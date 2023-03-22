@@ -31,42 +31,11 @@ export default function Navbar() {
 							<li>
 								<Link href="/"> Home </Link>
 							</li>
-							<li className="z-[999]" tabIndex={0}>
-								<a>
-									About Us
-									<svg
-										className="fill-current"
-										xmlns="http://www.w3.org/2000/svg"
-										width="20"
-										height="20"
-										viewBox="0 0 24 24"
-									>
-										<path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-									</svg>
-								</a>
-								<ul className="rounded-box p-2 bg-base-100">
-									<li>
-										<Link href="/aboutUs#msahistory"> MSA History</Link>
-									</li>
-									<li>
-										<Link href="/aboutUs#board"> MSA Board</Link>
-									</li>
-									<li>
-										<Link href="/aboutUs#otherorgs">Adjancent Orgs</Link>
-									</li>
-									<li>
-										<Link href="/aboutUs#nashvillecom">
-											Nashville Community
-										</Link>
-									</li>
-                  <li>
-										<Link href="/aboutUs#prayerspaces">
-											Prayer Spaces on Campus
-										</Link>
-									</li>
-								</ul>
+
+							<li>
+								<Link href="/aboutUs">About Us</Link>
 							</li>
-              <li>
+							<li>
 								<Link href="/ramadan">Ramadan 2023</Link>
 							</li>
 							<li>
@@ -75,30 +44,9 @@ export default function Navbar() {
 							<li>
 								<Link href="/recentEvents"> Recent Events </Link>
 							</li>
-							<li className="z-[999]" tabIndex={0}>
-								<a>
-									Forms
-									<svg
-										className="fill-current"
-										xmlns="http://www.w3.org/2000/svg"
-										width="20"
-										height="20"
-										viewBox="0 0 24 24"
-									>
-										<path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-									</svg>
-								</a>
-								<ul className="rounded-box p-2 bg-base-100">
-									<li>
-										<Link href="/forms#khutbah"> Khutbah Sign Ups</Link>
-									</li>
-									<li>
-										<Link href="/forms#feedback"> Feedback Form</Link>
-									</li>
-									<li>
-										<Link href="/forms#roommate"> Roommate Selection Form</Link>
-									</li>
-								</ul>
+
+							<li>
+								<Link href="/forms"> Forms </Link>
 							</li>
 							<li className="z-[999]" tabIndex={0}>
 								<a>
@@ -115,16 +63,10 @@ export default function Navbar() {
 								</a>
 								<ul className="rounded-box p-2 bg-base-100">
 									<li>
-										<Link href="/halalDiningFood">
-											{" "}
-											Vanderbilt Dining Halls
-										</Link>
+										<Link href="/halalDiningFood"> Vandy Dining Halls</Link>
 									</li>
 									<li>
-										<Link href="/halalRestaurants">
-											{" "}
-											Restaurants around Town{" "}
-										</Link>
+										<Link href="/halalRestaurants"> Halal Restaurants </Link>
 									</li>
 								</ul>
 							</li>
@@ -133,7 +75,12 @@ export default function Navbar() {
 					<div className="avatar">
 						<div className="w-24 rounded">
 							<Link href="/">
-								<Image src="/MSA.png" fill={true} loading="lazy" alt="MSA Logo"/>
+								<Image
+									src="/MSA.png"
+									fill={true}
+									loading="lazy"
+									alt="MSA Logo"
+								/>
 							</Link>
 						</div>
 					</div>
@@ -143,73 +90,23 @@ export default function Navbar() {
 						<li>
 							<Link href="/"> Home </Link>
 						</li>
-						<li className="z-[999]" tabIndex={0}>
-							<a>
-								About Us
-								<svg
-									className="fill-current"
-									xmlns="http://www.w3.org/2000/svg"
-									width="20"
-									height="20"
-									viewBox="0 0 24 24"
-								>
-									<path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-								</svg>
-							</a>
-							<ul className="rounded-box p-2 bg-base-100">
-								<li>
-									<Link href="/aboutUs#msahistory"> MSA History</Link>
-								</li>
-								<li>
-									<Link href="/aboutUs#board"> MSA Board</Link>
-								</li>
-								<li>
-									<Link href="/aboutUs#otherorgs">Adjancent Orgs</Link>
-								</li>
-								<li>
-									<Link href="/aboutUs#nashvillecom">Nashville Community</Link>
-								</li>
-								<li>
-									<Link href="/aboutUs#prayerspaces">
-										Prayer Spaces on Campus
-									</Link>
-								</li>
-							</ul>
+						<li>
+							<Link href="/aboutUs">About Us</Link>
 						</li>
-            
-            <li>
-								<Link href="/ramadan">Ramadan 2023</Link>
-							</li>
+
+						<li>
+							<Link href="/ramadan">Ramadan 2023</Link>
+						</li>
+
 						<li>
 							<Link href="/photos"> Photos </Link>
 						</li>
 						<li>
 							<Link href="/recentEvents"> Recent Events </Link>
 						</li>
-						<li className="z-[999]">
-							<a>
-								Forms
-								<svg
-									className="fill-current"
-									xmlns="http://www.w3.org/2000/svg"
-									width="20"
-									height="20"
-									viewBox="0 0 24 24"
-								>
-									<path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-								</svg>
-							</a>
-							<ul className="p-2 bg-base-100">
-								<li>
-									<Link href="/forms#khutbah"> Khutbah Sign Ups</Link>
-								</li>
-								<li>
-									<Link href="/forms#feedback"> Feedback Form</Link>
-								</li>
-								<li>
-									<Link href="/forms#roommate"> Roommate Selection Form</Link>
-								</li>
-							</ul>
+
+						<li>
+							<Link href="/forms"> Forms </Link>
 						</li>
 						<li className="z-[999]">
 							<a>
@@ -226,13 +123,10 @@ export default function Navbar() {
 							</a>
 							<ul className="p-2 bg-base-100">
 								<li>
-									<Link href="/halalDiningFood"> Vanderbilt Dining Halls</Link>
+									<Link href="/halalDiningFood"> Vandy Dining Food</Link>
 								</li>
 								<li>
-									<Link href="/halalRestaurants">
-										{" "}
-										Restaurants around Town{" "}
-									</Link>
+									<Link href="/halalRestaurants"> Halal Restaurants </Link>
 								</li>
 							</ul>
 						</li>

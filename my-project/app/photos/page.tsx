@@ -1,7 +1,7 @@
 import React from "react";
 
 async function fetchPhotos() {
-	const url = "http://localhost:4000";
+	const url = "https://vandymsabackend.fly.dev";
 	const res = await fetch(url + `/getPhotoLinks`, { cache: "no-store" });
 	const data = res.json();
 	return data;

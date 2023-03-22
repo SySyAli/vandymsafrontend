@@ -25,13 +25,13 @@ export default class NextJsCarousel extends Component<MyProps> {
 					interval={2000}
 					showThumbs={false}
 					dynamicHeight={false}
-					showArrows={false}
+					showArrows={true}
 					showIndicators={false}
 				>
 					{params.links.map((link: any, i: any) => {
 						return (
 							<div
-								className="w-full md:h-[800px] lg:h-[1000px] object-cover overflow-hidden object-center lg:rounded-lg"
+								className="w-full md:h-[720px] lg:h-[720px] object-cover overflow-hidden object-center lg:rounded-lg"
 								key={"slide" + (i + 1)}
 							>
 								<img loading="lazy" className="" src={link} alt={"image" + i + 1} />

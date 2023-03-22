@@ -1,7 +1,6 @@
-import Image from "next/image";
 
 async function getInstagramPosts() {
-  const url = "http://localhost:4000";
+  const url = "https://vandymsabackend.fly.dev";
   const res = await fetch(url + `/getInstagramPosts`, { cache: "no-store" });
   const data = res.json();
   return data;

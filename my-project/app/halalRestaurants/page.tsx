@@ -25,7 +25,7 @@ export default async function HalalRestaurants() {
 			</div>
 			<div>
 				<h3 className="font-bold">
-					Here is a list of Halal Restaurants located in Nashville:
+					Here's a list of some of the Halal Restaurants located in Nashville:
 				</h3>
 			</div>
 			<div>

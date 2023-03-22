@@ -1,7 +1,7 @@
 import React from 'react'
 
 async function fetchHalalFood() {
-    const url = "http://localhost:4000";
+    const url = "https://vandymsabackend.fly.dev";
     const res = await fetch(url + `/getHalalFood`, { cache: "no-store" });
     const data = res.json();
     return data
@@ -64,7 +64,7 @@ function HalalFormat({ timeFood, mealName }: any) {
     return (
         <div>
             <h1 className='text-center font-bold text-xl underline'>{mealName}</h1>
-            {(timeFood.message.indexOf("NO") !== -1) ? <p className="text-base">{mealName} has no Halal Meat related items (REPHRASE)</p> : <PutItems items={timeFood.food[0]}/>}
+            {(timeFood.message.indexOf("NO") !== -1) ? <p className="text-base text-center">{mealName} has no Halal Meat related items.</p> : <PutItems items={timeFood.food[0]}/>}
         </div>
     )
 }
