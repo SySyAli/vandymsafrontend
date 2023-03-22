@@ -9,9 +9,10 @@ export default function aboutUs() {
 				}}
 			>
 				<div className="hero-overlay bg-opacity-60"></div>
-				<div className="hero-content text-center font-bold text-3xl text-neutral-content">
+				<div className="hero-content text-center font-bold text-neutral-content">
 					<div className="max-w-md">
-						<div className="mb-5">
+					<div className="mb-5 text-3xl font-bold">About Us</div>
+						<div className="mb-5 text-2xl">
 							Welcome to the Vanderbilt Muslim Student Association (Vandy MSA)
 							website! Our organization is dedicated to serving the Muslim
 							student community at Vanderbilt University and promoting
