@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 
-export default async function HalalRestaurants() {
+export default function HalalRestaurants() {
 	return (
 		<div className="flex flex-col gap-4 text-center">
 			<div>

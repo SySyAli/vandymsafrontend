@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-export default async function aboutUs() {
+export default function aboutUs() {
 	return (
 		<div className="flex flex-col gap-4 text-center items-center justify-center">
 			<div
