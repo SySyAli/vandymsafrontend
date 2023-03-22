@@ -13,6 +13,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
 			<link rel="shortcut icon" href="/MSA.png" />
+			<title>Vandy MSA</title>
 			<head />
 			<body>
 				<div className="font-sans">
