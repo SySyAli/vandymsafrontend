@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 
-function Ramadan() {
+export default function Ramadan() {
 	return (
 		<div className="flex flex-col gap-4 text-center items-center justify-center w-full">
 			<div>
@@ -180,5 +180,3 @@ function Ramadan() {
 		</div>
 	);
 }
-
-export default Ramadan;
