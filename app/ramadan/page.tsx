@@ -137,7 +137,7 @@ export default function Ramadan() {
 				<div className="hero-overlay bg-opacity-60"></div>
 				<div className="hero-content flex flex-col gap-4 w-full align-center items-center justify-center text-center text-neutral-content">
 					<img
-						src="https://scontent.cdninstagram.com/v/t51.29350-15/336109572_203479505702537_4845990526967264008_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=nbKLialu-GwAX8IpzDc&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfDGN37UxQ56_OmimpCLqZOmGo5lg4vow0wgr8MD_-xTXQ&oe=641AB48F"
+						src="spiritual-events.png"
 						alt="Spirital Event Calendar"
 						loading="lazy"
 						className="w-fit lg:max-w-sm rounded-lg shadow-2xl"
