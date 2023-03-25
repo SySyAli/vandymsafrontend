@@ -76,7 +76,7 @@ export default function Navbar() {
 						<div className="w-24 rounded">
 							<Link href="/">
 								<Image
-									src="/MSA.png"
+									src="/MSALogo.png"
 									fill={true}
 									loading="lazy"
 									alt="MSA Logo"
