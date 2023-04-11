@@ -5,13 +5,13 @@ export default function aboutUs() {
 			<div
 				className="hero"
 				style={{
-					backgroundImage: `url("https://scontent-atl3-2.xx.fbcdn.net/v/t39.30808-6/284378068_10159019767157947_3114188057486494306_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=e3f864&_nc_ohc=Y2gYNu2o23AAX_Ma5JD&_nc_ht=scontent-atl3-2.xx&oh=00_AfCEyX8tKg0TMKVVSVX76FPBl8952-kvuWWLe2LXKKg6SQ&oe=64203983")`,
+					backgroundImage: `url("https://res.cloudinary.com/dwbmb9pvb/image/upload/c_fill,h_420,w_720/IMG_0039_it0tqd.webp")`,
 				}}
 			>
 				<div className="hero-overlay bg-opacity-60"></div>
 				<div className="hero-content text-center font-bold text-neutral-content">
 					<div className="max-w-md">
-					<div className="mb-5 text-3xl font-bold">About Us</div>
+						<div className="mb-5 text-3xl font-bold">About Us</div>
 						<div className="mb-5 text-2xl">
 							Welcome to the Vanderbilt Muslim Student Association (Vandy MSA)
 							website! Our organization is dedicated to serving the Muslim
@@ -25,30 +25,52 @@ export default function aboutUs() {
 			<div
 				className="hero"
 				style={{
-					backgroundImage: `url("https://cdn.vanderbilt.edu/vu-news/files/20190417204002/Mar-18-2019-5_25-PM_2019-03-18_21-20-31-1600x1067.jpg")`,
+					backgroundImage: `url("https://vanderbilthustler.com/wp-content/uploads/2018/01/IMG_1495-900x600.jpg")`,
 				}}
 			>
 				<div className="hero-overlay bg-opacity-60"></div>
-				<div className="hero-content text-center text-neutral-content">
+				<div className="hero-content flex flex-col gap-4 w-full align-center items-center justify-center text-center text-neutral-content">
 					<div className="max-w-md">
-						<div className="mb-5 text-xl font-bold">MSA History</div>
+						<img
+							src="/prayerspaces.png"
+							alt="Prayer Spaces Map"
+							loading="lazy"
+							className="w-fit lg:max-w-sm rounded-lg shadow-2xl"
+						/>
+						<div className="mb-5 text-xl font-bold">
+							Prayer Spaces on Campus
+						</div>
 						<div className="mb-5">
-							The Vanderbilt MSA was established in the early 2000s as a
-							student-led initiative to create a welcoming and supportive space
-							for Muslim students at Vanderbilt. Over the years, the Vanderbilt
-							MSA has grown to become one of the most active and vibrant student
-							organizations on campus, offering a wide range of programs,
-							events, and services to its members. Our mission is to promote a
-							positive and inclusive environment for Muslims on campus and to
-							build bridges of understanding and respect with other communities.
+							The Vanderbilt has several prayer spaces on campus. The main one
+							being the Annex, located on 411 24th Ave S, Nashville, TN 37212.
+							There is also the Commons Contemplation Room, which is located on
+							the second floor of the Commons Center. There is also the Rand
+							Contemplation Room. Another praying space is located in the
+							Multicultural Community Space. There is also All Faith Chapel,
+							which is located directly below Benton Chapel, and Eskind
+							Library's second floor contemplation room. There are also
+							meditation rooms in Rothschild and Zeppos Residental Colleges. A
+							map of the spaces:{" "}
+							<a
+								className="link"
+								target="_blank"
+								rel="noreferrer"
+								href={
+									"https://www.google.com/maps/d/u/0/edit?mid=1l7ACbCOblyE5p45Lzk7JpYQZSujq6O0&usp=sharing"
+								}
+							>
+								Vanderbilt Praying Spaces Map
+							</a>
+							.
 						</div>
 					</div>
 				</div>
 			</div>
+
 			<div
 				className="hero"
 				style={{
-					backgroundImage: `url("https://scontent-atl3-1.xx.fbcdn.net/v/t39.30808-6/315566853_513205130822419_8998121047810440460_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=730e14&_nc_ohc=hm2pgJ3E75AAX-giygi&_nc_ht=scontent-atl3-1.xx&oh=00_AfD7jlM-y07sQDof4ahyde5d6HxR8llUAzxtn-WVyhUB4Q&oe=641FE6CE")`,
+					backgroundImage: `url("https://admissions.vanderbilt.edu/wp-content/uploads/sites/4/2021/06/20181108JR003-scaled.jpg")`,
 				}}
 			>
 				<div className="hero-overlay bg-opacity-60"></div>
@@ -117,44 +139,26 @@ export default function aboutUs() {
 					</div>
 				</div>
 			</div>
+
 			<div
 				className="hero"
 				style={{
-					backgroundImage: `url("https://vanderbilthustler.com/wp-content/uploads/2018/01/IMG_1495-900x600.jpg")`,
+					backgroundImage: `url("https://cdn.vanderbilt.edu/vu-news/files/20190417204002/Mar-18-2019-5_25-PM_2019-03-18_21-20-31-1600x1067.jpg")`,
 				}}
 			>
 				<div className="hero-overlay bg-opacity-60"></div>
-				<div className="hero-content flex flex-col gap-4 w-full align-center items-center justify-center text-center text-neutral-content">
+				<div className="hero-content text-center text-neutral-content">
 					<div className="max-w-md">
-						<img
-							src="/prayerspaces.png"
-							alt="Prayer Spaces Map"
-							loading="lazy"
-							className="w-fit lg:max-w-sm rounded-lg shadow-2xl"
-						/>
-						<div className="mb-5 text-xl font-bold">Prayer Spaces on Campus</div>
+						<div className="mb-5 text-xl font-bold">MSA History</div>
 						<div className="mb-5">
-							The Vanderbilt has several prayer spaces on campus. The main one
-							being the Annex, located on 411 24th Ave S, Nashville, TN 37212.
-							There is also the Commons Contemplation Room, which is located on
-							the second floor of the Commons Center. There is also the Rand
-							Contemplation Room. Another praying space is located in the
-							Multicultural Community Space. There is also All Faith Chapel,
-							which is located directly below Benton Chapel, and Eskind
-							Library's second floor contemplation room. There are also
-							meditation rooms in Rothschild and Zeppos Residental Colleges. A
-							map of the spaces:{" "}
-							<a
-								className="link"
-								target="_blank"
-								rel="noreferrer"
-								href={
-									"https://www.google.com/maps/d/u/0/edit?mid=1l7ACbCOblyE5p45Lzk7JpYQZSujq6O0&usp=sharing"
-								}
-							>
-								Vanderbilt Praying Spaces Map
-							</a>
-							.
+							The Vanderbilt MSA was established in the early 1970s as a
+							student-led initiative to create a welcoming and supportive space
+							for Muslim students at Vanderbilt. Over the years, the Vanderbilt
+							MSA has grown to become one of the most active and vibrant student
+							organizations on campus, offering a wide range of programs,
+							events, and services to its members. Our mission is to promote a
+							positive and inclusive environment for Muslims on campus and to
+							build bridges of understanding and respect with other communities.
 						</div>
 					</div>
 				</div>

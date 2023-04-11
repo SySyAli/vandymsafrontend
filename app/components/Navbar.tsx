@@ -46,7 +46,7 @@ export default function Navbar() {
 							</li>
 
 							<li>
-								<Link href="/forms"> Forms </Link>
+								<Link href="/forms"> Getting Invovled </Link>
 							</li>
 							<li className="z-[999]" tabIndex={0}>
 								<a>
@@ -106,7 +106,7 @@ export default function Navbar() {
 						</li>
 
 						<li>
-							<Link href="/forms"> Forms </Link>
+							<Link href="/forms"> Getting Involved </Link>
 						</li>
 						<li className="z-[999]">
 							<a>
