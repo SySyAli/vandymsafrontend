@@ -92,7 +92,9 @@ export default function GettingInvolved() {
 								href={
 									"https://docs.google.com/spreadsheets/d/1QcS8C0t2sxa9YsfFy5MqwOrl-ekE8t8xNtcF73R9tGw/edit?usp=sharing"
 								}
-							></a>
+							>
+								Khateeb Sign Up Sheet
+							</a>
 						</div>
 						<div className="font-bold text-xl">
 							Sign using this sheet for the Friday Khutbah:{" "}
