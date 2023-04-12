@@ -38,7 +38,19 @@ export default function GettingInvolved() {
 				<div className="hero-overlay bg-opacity-60"></div>
 				<div className="hero-content text-center text-neutral-content">
 					<div className="max-w-md">
-						<div className="mb-5 text-2xl font-bold">Donate</div>
+						<div className="mb-5 text-2xl font-bold">
+							Donate:{" "}
+							<a
+								className="link"
+								target="_blank"
+								rel="noreferrer"
+								href={
+									"https://vanderbilt.alumniq.com/giving/to/muslimstudentassociation?appealcode=A-00000251"
+								}
+							>
+								Donation Form
+							</a>
+						</div>
 						<div className="text-xl font-bold">
 							Please use this link to donate to us:{" "}
 							<a
@@ -71,7 +83,17 @@ export default function GettingInvolved() {
 				<div className="hero-overlay bg-opacity-60"></div>
 				<div className="hero-content flex flex-col gap-4 w-full align-center items-center justify-center text-center text-neutral-content">
 					<div className="max-w-md">
-						<div className="mb-5 text-2xl font-bold">Give a Khutbah</div>
+						<div className="mb-5 text-2xl font-bold">
+							Give a Khutbah:{" "}
+							<a
+								className="link"
+								target="_blank"
+								rel="noreferrer"
+								href={
+									"https://docs.google.com/spreadsheets/d/1QcS8C0t2sxa9YsfFy5MqwOrl-ekE8t8xNtcF73R9tGw/edit?usp=sharing"
+								}
+							></a>
+						</div>
 						<div className="font-bold text-xl">
 							Sign using this sheet for the Friday Khutbah:{" "}
 							<a
@@ -108,7 +130,17 @@ export default function GettingInvolved() {
 				<div className="hero-overlay bg-opacity-60"></div>
 				<div className="hero-content flex flex-col gap-4 w-full align-center items-center justify-center text-center text-neutral-content">
 					<div className="max-w-md">
-						<div className="mb-5 text-2xl font-bold">Feedback Form</div>
+						<div className="mb-5 text-2xl font-bold">
+							Feedback Form:{" "}
+							<a
+								className="link"
+								target="_blank"
+								rel="noreferrer"
+								href={"https://forms.gle/fAu1aNoEz5m2XGqk6"}
+							>
+								Feedback Form
+							</a>
+						</div>
 						<div className="mb-5 text-xl font-bold">
 							Use this form to give feedback:{" "}
 							<a
@@ -140,7 +172,15 @@ export default function GettingInvolved() {
 				<div className="hero-content flex flex-col gap-4 w-full align-center items-center justify-center text-center text-neutral-content">
 					<div className="max-w-md">
 						<div className="mb-5 text-2xl font-bold">
-							Roommate Selection Form
+							Roommate Selection Form:{" "}
+							<a
+								className="link"
+								target="_blank"
+								rel="noreferrer"
+								href={"https://forms.gle/vXjHfx24Snz5s9y48"}
+							>
+								Roommate Selection Form
+							</a>
 						</div>
 						<div className="mb-5 text-xl font-bold">
 							Fill this form if you are looking for prospective roommates for

@@ -7,9 +7,18 @@ async function fetchHalalFood() {
     return data
 }
 
+export async function getServerSideProps() {
+	const url = "https://vandymsabackend.fly.dev/getHalalFood";
+    const res = await fetch(url, { cache: "no-store" });
+    const data = await res.json();
+	return {
+		props: { foods: data}, // will be passed to the page component as props
+	};
+}
 
-async function halalDiningFood() {
-    const foods = await fetchHalalFood()
+
+function halalDiningFood({foods}: any) {
+    //const foods = await fetchHalalFood()
     return (
         <div>
         <div className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white text-center">Halal Food in Dining Halls</div>

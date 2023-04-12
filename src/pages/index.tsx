@@ -1,10 +1,20 @@
-import "./globals.css";
-import NewCarousel from "./components/newCarousel";
+import NewCarousel from "../components/newCarousel";
 import hdate from "human-date";
 import Image from "next/image";
 // 'tw-elements'
 const URI = "https://vandymsabackend.fly.dev";
 
+export async function getServerSideProps() {
+	const url = await `${URI}/prayerTimes`;
+	const res = await fetch(url, { cache: "no-store" });
+	const data = await res.json();
+	const url1 = await `${URI}/getPhotoLinks`;
+	const res1 = await fetch(url1, { cache: "no-store" });
+	const data1 = await res1.json();
+	return {
+		props: { times: data, photoUrls: data1 }, // will be passed to the page component as props
+	};
+}
 
 async function getPrayerTimes() {
 	const url = await `${URI}/prayerTimes`;
@@ -28,11 +38,8 @@ async function getPhotoUrls() {
  */
 // FIGURE OUT WHAT TO DO WITH CAROUSEL - AUTOMATIC OR BUTTONS/MANUAL
 // FIGURE OUT TIME CONVERSION
-export default async function Home() {
-	const times: any = await getPrayerTimes();
-	let photoUrls: any = await getPhotoUrls();
-	//const calendarEvents: any = await getEvents();
-	//const threeEvents: any = calendarEvents.events.slice(0, 1);
+export default function Home({ times, photoUrls }: any) {
+  // console.log(times + " " + photoUrls)
 	photoUrls = photoUrls.results.slice(0, 10);
 
 	/*

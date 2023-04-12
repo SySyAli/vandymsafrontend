@@ -9,7 +9,7 @@ export default function Footer() {
 					<div className="avatar">
 						<div className="w-24 rounded ">
 							<Link href="/">
-								<Image src="/MSALogo.png" fill={true} loading = "lazy" alt="MSA Logo"/>
+								<img src="/MSALogo.png" loading = "lazy" alt="MSA Logo"/>
 							</Link>
 						</div>
 					</div>

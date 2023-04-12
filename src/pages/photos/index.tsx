@@ -7,8 +7,18 @@ async function fetchPhotos() {
 	return data;
 }
 
-export default async function PhotosPage() {
-	const photos = await fetchPhotos();
+export async function getServerSideProps() {
+	const url = "https://vandymsabackend.fly.dev/getPhotoLinks";
+	const res = await fetch(url, { cache: "no-store" });
+	const data = await res.json();
+	return {
+		props: { photos: data}, // will be passed to the page component as props
+	};
+}
+
+
+export default function PhotosPage({photos}: any) {
+	//const photos = await fetchPhotos();
 	return (
 		<div>
 			<div className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl text-center">

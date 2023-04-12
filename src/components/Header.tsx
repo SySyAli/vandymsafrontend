@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Navbar() {
 	return (
 		<>
-			<div className="navbar bg-base-100">
+			<div className="navbar ">
 				<div className="navbar-start">
 					<div className="dropdown">
 						<label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -75,9 +75,8 @@ export default function Navbar() {
 					<div className="avatar">
 						<div className="w-24 rounded">
 							<Link href="/">
-								<Image
+								<img
 									src="/MSALogo.png"
-									fill={true}
 									loading="lazy"
 									alt="MSA Logo"
 								/>
