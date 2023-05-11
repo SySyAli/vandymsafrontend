@@ -179,7 +179,7 @@ export default function GettingInvolved() {
 								className="link"
 								target="_blank"
 								rel="noreferrer"
-								href={"https://forms.gle/vXjHfx24Snz5s9y48"}
+								href={"https://forms.gle/VnDRyjzJFN7EpSC67"}
 							>
 								Roommate Selection Form
 							</a>
@@ -191,7 +191,7 @@ export default function GettingInvolved() {
 								className="link"
 								target="_blank"
 								rel="noreferrer"
-								href={"https://forms.gle/vXjHfx24Snz5s9y48"}
+								href={"https://forms.gle/VnDRyjzJFN7EpSC67"}
 							>
 								Roommate Selection Form
 							</a>
