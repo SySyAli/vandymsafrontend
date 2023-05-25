@@ -90,7 +90,7 @@ export default function GettingInvolved() {
 								target="_blank"
 								rel="noreferrer"
 								href={
-									"https://docs.google.com/spreadsheets/d/1QcS8C0t2sxa9YsfFy5MqwOrl-ekE8t8xNtcF73R9tGw/edit?usp=sharing"
+									"https://docs.google.com/spreadsheets/d/1on1neN20T9St9nvhIP-8pKhsWBcZSM6rw5mdzmxhO9A/edit#gid=0"
 								}
 							>
 								Khateeb Sign Up Sheet
@@ -103,7 +103,7 @@ export default function GettingInvolved() {
 								target="_blank"
 								rel="noreferrer"
 								href={
-									"https://docs.google.com/spreadsheets/d/1QcS8C0t2sxa9YsfFy5MqwOrl-ekE8t8xNtcF73R9tGw/edit?usp=sharing"
+									"https://docs.google.com/spreadsheets/d/1on1neN20T9St9nvhIP-8pKhsWBcZSM6rw5mdzmxhO9A/edit#gid=0"
 								}
 							>
 								Khateeb Sign Up Sheet
